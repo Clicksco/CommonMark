@@ -33,7 +33,7 @@ class ServiceProvider extends IlluminateServiceProvider
     public function register()
     {
         $this->app->bindShared('clicksco.commonmark', function($app) {
-            return new CommonMarkConverter;
+            return new CommonMarkConverter();
         });
     }
 }

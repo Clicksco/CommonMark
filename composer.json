@@ -1,11 +1,11 @@
 {
     "name": "clicksco/commonmark-laravel",
-    "description": "Simple Laravel wrapper class for League\\CommonMark",
+    "description": "Trivial Laravel wrapper class for League\\CommonMark",
     "keywords": [
         "laravel",
         "commonmark"
     ],
-    "homepage": "https://github.com/clicksco/commonmark-laravel",
+    "homepage": "https://github.com/Clicksco/CommonMarkLaravel",
     "license": "MIT",
     "authors": [
         {
