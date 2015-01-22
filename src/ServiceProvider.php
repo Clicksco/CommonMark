@@ -6,20 +6,33 @@ use League\CommonMark\CommonMarkConverter;
 
 class ServiceProvider extends IlluminateServiceProvider
 {
+    /**
+     * Indicates if loading of the provider is deferred.
+     *
+     * @var bool
+     */
     protected $defer = true;
 
-    protected $hint = 'clicksco/commonmark';
-
-    public function boot()
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
     {
-        $this->package('clicksco/commonmark', $this->hint);
+        return [
+            'clicksco.commonmark',
+        ];
     }
 
+    /**
+     * Register the service provided.
+     *
+     * @return void
+     */
     public function register()
     {
-        $this->app['clicksco.commonmark'] = $this->app->share(function($app){
-            $config = \Config::get($this->hint . '::config');
-
+        $this->app->bindShared('clicksco.commonmark', function($app) {
             return new CommonMarkConverter;
         });
     }
