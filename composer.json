@@ -16,7 +16,6 @@
     ],
     "require": {
         "php" : ">=5.4.0",
-        "illuminate/container": "~4.1",
         "illuminate/support": "~4.1",
         "league/commonmark": "~0.6"
     },
