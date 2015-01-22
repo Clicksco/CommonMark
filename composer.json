@@ -1,0 +1,41 @@
+{
+    "name": "clicksco/commonmark-laravel",
+    "description": "Simple Laravel wrapper class for League\\CommonMark",
+    "keywords": [
+        "laravel",
+        "commonmark"
+    ],
+    "homepage": "https://github.com/clicksco/commonmark-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jon Park",
+            "email": "jon.park@thap.co.uk",
+            "homepage": "https://twitter.com/jonspark"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4.0",
+        "illuminate/container": "~4.1",
+        "illuminate/support": "~4.1",
+        "league/commonmark": "~0.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Clicksco\\CommonMark\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Clicksco\\CommonMark\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
